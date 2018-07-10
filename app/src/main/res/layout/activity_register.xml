@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luxand.mirrorreality.Register"
+    android:background="@drawable/r14">
+<!--
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/p2"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchbox"
+            android:layout_alignParentBottom="true"
+            android:text="AM"
+            android:textSize="50dp"/>
+
+    </android.support.v7.widget.Toolbar>
+-->
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/te1"
+        android:text="Create a new account "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_marginLeft="30dp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter your Name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@drawable/f"
+        android:id="@+id/name"
+        android:textColor="#fff"
+        android:layout_below="@+id/te1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textStyle="italic"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter your Phone"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@drawable/f"
+        android:id="@+id/phone"
+        android:textColor="#fff"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textStyle="italic"
+        android:inputType="numberSigned"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter your E_mail"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@drawable/f"
+        android:id="@+id/email"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textStyle="italic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@id/phone"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter your Password"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@drawable/f"
+        android:id="@+id/password"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textStyle="italic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@id/email" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Confirm your password "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@drawable/f"
+        android:id="@+id/RePassword"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textStyle="italic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@id/password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="  Create  "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@drawable/f1"
+        android:id="@+id/but1"
+        android:onClick="register"
+        android:textColor="#fff"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@id/RePassword"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+</RelativeLayout>

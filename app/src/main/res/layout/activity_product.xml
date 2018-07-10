@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luxand.mirrorreality.product">
+<!--
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar1">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/p2"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchbox"
+            android:layout_alignParentBottom="true"
+            android:text="AM"
+            android:textSize="50dp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+
+-->
+    <!--
+    YOU PUT LIST HERE , I WILL UPDATE IT
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/toolbar1">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/Menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:onClick="menuClick"
+        android:background="@drawable/q1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="17dp"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/q110"
+        android:id="@+id/Home"
+        android:onClick="homeClick"
+        android:layout_above="@+id/Card"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/Card"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/q3"
+        android:onClick="cardClick"
+        android:layout_above="@+id/Favo"
+        android:layout_toStartOf="@+id/Favo"
+        android:layout_marginEnd="11dp"
+        android:visibility="invisible"
+        android:layout_toLeftOf="@+id/Favo"
+        android:layout_marginRight="11dp" />
+
+    <ImageView
+        android:id="@+id/Favo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/q4"
+        android:onClick="favClick"
+        android:layout_above="@+id/Logout"
+        android:layout_toStartOf="@+id/Logout"
+        android:visibility="invisible"
+        android:layout_toLeftOf="@+id/Logout" />
+
+    <ImageView
+        android:id="@+id/Logout"
+        android:layout_width="40dp"
+        android:onClick="outClick"
+        android:layout_height="40dp"
+        android:layout_above="@+id/Menu"
+        android:layout_toStartOf="@+id/Menu"
+        android:background="@drawable/q8"
+        android:visibility="invisible"
+        android:layout_toLeftOf="@+id/Menu" />
+
+
+</RelativeLayout>

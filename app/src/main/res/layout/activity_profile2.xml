@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luxand.mirrorreality.profile2"
+    android:background="@drawable/r14">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Current Password"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@drawable/f"
+        android:id="@+id/CurrentPass"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textStyle="italic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="New Password"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@drawable/f"
+        android:id="@+id/newPass"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textStyle="italic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@id/CurrentPass" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Confirm your password "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@drawable/f"
+        android:id="@+id/ConfrmPass"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textStyle="italic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@id/newPass"
+        android:inputType="textPassword"/>
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="  Change  "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="@drawable/f1"
+        android:id="@+id/changPass"
+        android:onClick="change_click"
+        android:textColor="#fff"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@id/ConfrmPass"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

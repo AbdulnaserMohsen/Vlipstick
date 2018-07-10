@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000">
+
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66333333"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear1">
+
+            <ImageView
+                android:id="@+id/Fav"
+                android:layout_width="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50dp"
+                android:text=""
+                android:onClick="fav"
+                android:background="@drawable/heart5" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textAlignment="textStart"
+                android:drawableLeft="@drawable/card3"
+                android:text="ADD TO CARD"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                tools:ignore="RtlCompat"
+                android:background="@drawable/f3"
+                android:onClick="addToCart"/>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/linear1"
+            android:id="@+id/linear2"
+            android:orientation="horizontal"
+            >
+            <!--
+
+            We Will pput recyclelistview here
+            -->
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerView"
+                android:orientation="horizontal">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linear2"
+            android:id="@+id/linear3"
+
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/camera3"
+                android:padding="5dp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
